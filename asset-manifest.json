@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/packers-movers-app/static/css/main.b8654c86.css",
+    "main.js": "/packers-movers-app/static/js/main.d3f5b472.js",
+    "index.html": "/packers-movers-app/index.html",
+    "main.b8654c86.css.map": "/packers-movers-app/static/css/main.b8654c86.css.map",
+    "main.d3f5b472.js.map": "/packers-movers-app/static/js/main.d3f5b472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8654c86.css",
+    "static/js/main.d3f5b472.js"
+  ]
+}
