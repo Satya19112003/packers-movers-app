@@ -1,30 +1,30 @@
 import React from "react";
 import InventoryAccordion from "./InventoryAccordion";
-import "./MoveDetails.css";
 
 const MoveDetails = ({ move }) => {
   return (
-    <div className="details">
-      <h4>Additional Information</h4>
-      <p>{move.additional_info || "Test Data"}</p>
+    <div className="bg-gray-50 p-4 rounded">
 
-      <h4>House Details</h4>
+      <h4 className="font-semibold mb-2">Additional Info</h4>
+      <p className="text-sm mb-3">{move.additional_info || "N/A"}</p>
 
-      <div className="house-grid">
+      <h4 className="font-semibold mb-2">House Details</h4>
+
+      <div className="grid grid-cols-2 gap-4 text-sm">
         <div>
-          <strong>Existing House</strong>
+          <p className="font-medium">Existing</p>
           <p>Floor: {move.old_floor_no}</p>
           <p>Elevator: {move.old_elevator_availability}</p>
         </div>
 
         <div>
-          <strong>New House</strong>
+          <p className="font-medium">New</p>
           <p>Floor: {move.new_floor_no}</p>
           <p>Elevator: {move.new_elevator_availability}</p>
         </div>
       </div>
 
-      <h4>Inventory Details</h4>
+      <h4 className="font-semibold mt-4">Inventory</h4>
       <InventoryAccordion inventory={move.items.inventory} />
     </div>
   );
